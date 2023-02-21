@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+int main()
+{
+int c,n,i=0,r=0;
+  printf("enter a number ");
+    scanf("%d",&n);
+    c=n;
+    while (n!=0)
+    {
+        
+        r=n%10;
+        i=i+(r*r*r);
+        n=n/10;
+    }
+
+    printf("\n %d",i);
+
+    if(c==i){
+    printf("\n \n  %d  is a armstrong",c);
+    }
+
+    else
+    {
+    printf("it is not armstrong ");
+    }
+}
