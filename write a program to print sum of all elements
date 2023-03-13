@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+ int main()
+int n;
+printf("enter a array size");
+scanf("%d", &n);
+int a[n]; 
+int i;
+printf("ENTER ARRAY VALUES");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]); 
+for(i=0;i<n;i++)
+printf("\t%d", a[i]);
+printf("\n output=%d", a[0]+a[1]+a[2]+a[3]);
+
+return 0;
+}
