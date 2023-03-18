@@ -1,0 +1,12 @@
+
+#include<stdio.h>
+void cuberoot(int n){ 
+
+int cuberoot=n*n*n;
+printf("%d", cuberoot);
+}
+int main()
+{
+cuberoot(2);
+return 0;
+}
