@@ -1,0 +1,9 @@
+#include<stdio.h>
+void areaofrectangle(int L,int B){
+int area=L*B;
+printf("%d",area);
+}
+ int main(){
+areaofrectangle(2,3);
+return 0;
+}
