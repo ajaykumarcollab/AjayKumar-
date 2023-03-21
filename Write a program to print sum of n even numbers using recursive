@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int sumOfEven(int n) {
+    if (n == 0) { // base case: if n is 0, return 0
+        return 0;
+    } else {
+        // recursive case: add n*2 (i.e., the nth even number)
+        // to the sum of the first n-1 even numbers
+        return (n*2 + sumOfEven(n-1));
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter a positive integer n: ");
+    scanf("%d", &n);
+    int sum = sumOfEven(n);
+    printf("The sum of the first %d even numbers is: %d\n", n, sum);
+    return 0;
+}
