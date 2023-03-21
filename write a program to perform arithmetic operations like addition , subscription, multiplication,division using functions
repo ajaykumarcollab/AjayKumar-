@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int addition(int a, int b) {
+    return a + b;
+}
+
+int subtraction(int a, int b) {
+    return a - b;
+}
+
+int multiplication(int a, int b) {
+    return a * b;
+}
+
+float division(int a, int b) {
+    return (float) a / b;
+}
+
+int main() {
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    printf("The sum of %d and %d is %d\n", num1, num2, addition(num1, num2));
+    printf("The difference of %d and %d is %d\n", num1, num2, subtraction(num1, num2));
+    printf("The product of %d and %d is %d\n", num1, num2, multiplication(num1, num2));
+    printf("The quotient of %d and %d is %.2f\n", num1, num2, division(num1, num2));
+    return 0;
+}
